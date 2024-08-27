@@ -34,5 +34,5 @@ Este proyecto es una aplicación web de encriptación y desencriptación de text
 
 1. Clona este repositorio en tu máquina local.
    ```bash
-   git clone https://github.com/tu-usuario/encriptador-de-texto.git
+   git clone https://github.com/nestorsauceda/encriptador-de-texto.git
    ```
