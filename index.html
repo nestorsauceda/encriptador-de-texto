@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>Encriptador</title>
+</head>
+
+<body>
+    <main>
+    <section class="section__1">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="./assets/logoalura.svg" alt="Logo" /></a>
+        </div>
+        
+        </div>
+      </header>
+      <div class="container__letf">
+        <textarea name="containertext" id="container__text" cols="30" rows="10" placeholder="Ingrese el texto aquí"
+          onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 241)"min=1"></textarea>
+        <div class=" container_btn">
+          <div class="instrucciones">
+            <img src="./assets/bi_exclamation-circle-fill.svg" alt="icono de alerta" />
+            <label for="instrucciones">Solo letras minúsculas y sin acentos</label>
+          </div>
+          <div class="style__btn">
+            <button id="btn__encriptar" onclick="encriptarBtn()">Encriptar</button>
+            <button id="btn__desencriptar" onclick="desencriptarBtn()">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__2">
+      <div class="container__right">
+        <div class="img_mono">
+          <img src="./assets/mono.svg" alt="figura de un chico con una lupa" />
+        </div>
+        <p id="text_1">Ningún mensaje fue encontrado</p>
+        <p id="text_2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <div class="ocultar">
+          <p class="text__result"></p>
+        </div>
+        <div class="ocultar">
+          <button id="btn__copy" >Copiar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  </body>
+
+  <script src="./script.js"></script>
+
+</html>
